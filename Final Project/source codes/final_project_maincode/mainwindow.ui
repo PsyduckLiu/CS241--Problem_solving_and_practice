@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>854</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Final Project Made by HaolinLiu(PsyduckLiu)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>data</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="data_table">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>192</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTextEdit" name="textEdit">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>20</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>chart</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Please select a station </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="spinBox_3">
+          <property name="maximum">
+           <number>80</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Please choose the starting time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDateTimeEdit" name="dateTimeEdit">
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2019</year>
+            <month>1</month>
+            <day>7</day>
+           </datetime>
+          </property>
+          <property name="time">
+           <time>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+           </time>
+          </property>
+          <property name="maximumDateTime">
+           <datetime>
+            <hour>23</hour>
+            <minute>59</minute>
+            <second>59</second>
+            <year>2019</year>
+            <month>1</month>
+            <day>13</day>
+           </datetime>
+          </property>
+          <property name="minimumDateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>2019</year>
+            <month>1</month>
+            <day>7</day>
+           </datetime>
+          </property>
+          <property name="minimumDate">
+           <date>
+            <year>2019</year>
+            <month>1</month>
+            <day>7</day>
+           </date>
+          </property>
+          <property name="maximumTime">
+           <time>
+            <hour>23</hour>
+            <minute>59</minute>
+            <second>59</second>
+           </time>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy-MM-dd hh:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Please choose the ending time</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDateTimeEdit" name="dateTimeEdit_2">
+          <property name="date">
+           <date>
+            <year>2019</year>
+            <month>1</month>
+            <day>7</day>
+           </date>
+          </property>
+          <property name="maximumDate">
+           <date>
+            <year>2019</year>
+            <month>1</month>
+            <day>13</day>
+           </date>
+          </property>
+          <property name="minimumDate">
+           <date>
+            <year>2019</year>
+            <month>1</month>
+            <day>7</day>
+           </date>
+          </property>
+          <property name="maximumTime">
+           <time>
+            <hour>23</hour>
+            <minute>59</minute>
+            <second>59</second>
+           </time>
+          </property>
+          <property name="displayFormat">
+           <string>yyyy-MM-dd hh:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Please choose the time step</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QTimeEdit" name="timeEdit">
+          <property name="time">
+           <time>
+            <hour>1</hour>
+            <minute>0</minute>
+            <second>0</second>
+           </time>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QChartView" name="widget" native="true"/>
+        </item>
+        <item row="5" column="1">
+         <widget class="QChartView" name="widget_3" native="true"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QChartView" name="widget_2" native="true"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="QChartView" name="widget_4" native="true"/>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_time">
+          <property name="text">
+           <string>Yes</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>road planning</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label1">
+          <property name="text">
+           <string>Please select the Metro_roadMap.csv first!!!</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Please input the  exiting station ID </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="spinBox">
+          <property name="maximum">
+           <number>80</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Please input the  entering station ID </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="maximum">
+           <number>80</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="YesButton">
+          <property name="text">
+           <string>Yes</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QTextEdit" name="roadinformatiion"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>analysis</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="Widget_all">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>479</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>340</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QChartView" name="widget_5" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>854</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuchart">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuChoosedata">
+    <property name="title">
+     <string>ChooseData</string>
+    </property>
+    <addaction name="actiontime"/>
+    <addaction name="actionlineID"/>
+    <addaction name="actionstationID"/>
+    <addaction name="actiondeviceID"/>
+    <addaction name="actionstatus"/>
+    <addaction name="actionuserID"/>
+    <addaction name="actionpayType"/>
+   </widget>
+   <widget class="QMenu" name="menuChart">
+    <property name="title">
+     <string>Chart</string>
+    </property>
+    <addaction name="actionBased_on_the_dataset_you_choose"/>
+    <addaction name="actionBased_on_all_of_the_data"/>
+   </widget>
+   <widget class="QMenu" name="menuRoadPlaning">
+    <property name="title">
+     <string>RoadPlanning</string>
+    </property>
+    <addaction name="actionplan_a_road"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analysis</string>
+    </property>
+    <widget class="QMenu" name="menulineID">
+     <property name="title">
+      <string>lineID</string>
+     </property>
+     <addaction name="actionBased_on_the_dataset_you_choose_2"/>
+     <addaction name="actionBased_on_all_of_the_data_2"/>
+    </widget>
+    <widget class="QMenu" name="menustationID">
+     <property name="title">
+      <string>stationID</string>
+     </property>
+     <addaction name="actionBased_on_the_dataset_you_choose_3"/>
+     <addaction name="actionBased_on_all_of_the_data_3"/>
+    </widget>
+    <widget class="QMenu" name="menudeviceID">
+     <property name="title">
+      <string>deviceID</string>
+     </property>
+     <addaction name="actionBased_on_the_dataset_you_choose_4"/>
+     <addaction name="actionBased_on_all_of_the_data_4"/>
+    </widget>
+    <widget class="QMenu" name="menupayType">
+     <property name="title">
+      <string>payType</string>
+     </property>
+     <addaction name="actionBased_on_the_dataset_you_choose_5"/>
+     <addaction name="actionBased_on_all_of_the_data_5"/>
+    </widget>
+    <addaction name="menulineID"/>
+    <addaction name="menustationID"/>
+    <addaction name="menudeviceID"/>
+    <addaction name="menupayType"/>
+   </widget>
+   <addaction name="menuchart"/>
+   <addaction name="menuChoosedata"/>
+   <addaction name="menuChart"/>
+   <addaction name="menuRoadPlaning"/>
+   <addaction name="menuAnalysis"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actiontime">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>time</string>
+   </property>
+  </action>
+  <action name="actionlineID">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>lineID</string>
+   </property>
+  </action>
+  <action name="actionstationID">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>stationID</string>
+   </property>
+  </action>
+  <action name="actiondeviceID">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>deviceID</string>
+   </property>
+  </action>
+  <action name="actionstatus">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>status</string>
+   </property>
+  </action>
+  <action name="actionuserID">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>userID</string>
+   </property>
+  </action>
+  <action name="actionpayType">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>payType</string>
+   </property>
+  </action>
+  <action name="actionplan_a_road">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>choose a Metro_roadMap</string>
+   </property>
+  </action>
+  <action name="actionBased_on_the_dataset_you_choose">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on the dataset you choose</string>
+   </property>
+  </action>
+  <action name="actionBased_on_all_of_the_data">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on all of the data</string>
+   </property>
+  </action>
+  <action name="actionBased_on_the_dataset_you_choose_2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on the dataset you choose</string>
+   </property>
+  </action>
+  <action name="actionBased_on_all_of_the_data_2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on all of the data</string>
+   </property>
+  </action>
+  <action name="actionBased_on_the_dataset_you_choose_3">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on the dataset you choose</string>
+   </property>
+  </action>
+  <action name="actionBased_on_all_of_the_data_3">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on all of the data</string>
+   </property>
+  </action>
+  <action name="actionBased_on_the_dataset_you_choose_4">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on the dataset you choose</string>
+   </property>
+  </action>
+  <action name="actionBased_on_all_of_the_data_4">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on all of the data</string>
+   </property>
+  </action>
+  <action name="actionBased_on_the_dataset_you_choose_5">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on the dataset you choose</string>
+   </property>
+  </action>
+  <action name="actionBased_on_all_of_the_data_5">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Based on all of the data</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QWidget</extends>
+   <header>qchartview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>data_table</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,5 @@
+This program is used to classify and statistic the data from the whole dataset.
+You should firstly select a target data set folder.
+Then it selects time based on the station and status.
+After doing this,it builds 162 files named station_status(such as 0_0,0_1,1_1 and so on).
+You can see them in the folder Final Project\data sets\preprocessed data\data_chosen(based on the station number and the status).
